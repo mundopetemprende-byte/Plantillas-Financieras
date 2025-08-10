@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kit Finanzas: Plantillas, Planeadores y Agenda — Landing</title>
+    <meta name="description" content="Kits digitales: Plantilla de Ahorro, Plantilla de Finanzas para Emprendedores, Planeador 2025-2026 y Agenda Planificadora. Compra el pack ideal para organizar tus finanzas." />
+    <style>
+        /* RESET */
+        *,*::before,*::after{box-sizing:border-box}
+        html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#0f172a}
+        a{color:inherit;text-decoration:none}
+        img{max-width:100%;height:auto}
+
+        /* LAYOUT */
+        .container{max-width:1000px;margin:0 auto;padding:20px}
+        header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+        .brand{display:flex;gap:12px;align-items:center}
+        .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#22c55e,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+        nav{display:flex;gap:12px}
+        .btn{background:#0ea5a4;color:white;padding:10px 14px;border-radius:10px;font-weight:600;border:none;cursor:pointer}
+        .btn-outline{border:2px solid #0ea5a4;padding:8px 12px;border-radius:10px;background:transparent}
+
+        /* HERO */
+        .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+        .hero h1{font-size:28px;margin:0 0 12px}
+        .hero p{margin:0 0 18px;color:#334155}
+        .hero-cta{display:flex;gap:12px}
+        .mockup{background:#f8fafc;border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+        .mockup .card{background:white;border-radius:10px;padding:12px;margin-bottom:12px;border:1px solid #e6eef2}
+
+        /* GALLERY */
+        .gallery{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:14px;margin:18px 0}
+        .gallery-item{background:#fff;border-radius:10px;padding:14px;border:1px solid #edf2f7;text-align:center}
+        .gallery-item img{border-radius:8px;margin-bottom:10px}
+        .gallery-item h4{margin:0 0 6px;font-size:15px}
+        .gallery-item p{margin:0;color:#475569;font-size:14px}
+        
+        /* FEATURES */
+        .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+        .feature{background:#fff;border-radius:10px;padding:14px;border:1px solid #edf2f7}
+        .feature h4{margin:0 0 6px;font-size:15px}
+        .feature p{margin:0;color:#475569;font-size:14px}
+
+        /* PRICING */
+        .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+        .card-pricing{border-radius:12px;padding:18px;background:linear-gradient(180deg, #ffffff, #f8fafc);border:1px solid #e2e8f0}
+        .price{font-size:22px;font-weight:700;margin:10px 0}
+        .list{margin:8px 0 14px;padding:0;list-style:none}
+        .list li{font-size:14px;color:#475569;padding:6px 0;border-top:1px dashed #eef2f7}
+
+        /* TESTIMONIALS */
+        .testimonials{display:flex;gap:12px;margin:18px 0}
+        .testimonial{flex:1;background:#fff;padding:12px;border-radius:10px;border:1px solid #eef2f7}
+
+        /* FOOTER */
+        footer{padding:24px 0;color:#64748b;font-size:14px}
+
+        /* RESPONSIVE */
+        @media(max-width:900px){
+            .hero{grid-template-columns:1fr;}
+            .features{grid-template-columns:1fr}
+            .pricing{grid-template-columns:1fr}
+            nav{display:none}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">KF</div>
+                <div>
+                    <div style="font-weight:700">Kit Finanzas</div>
+                    <div style="font-size:13px;color:#64748b">Plantillas y planeadores digitales</div>
+                </div>
+            </div>
+            <nav>
+                <a class="small" href="#kits">Kits</a>
+                <a class="small" href="#beneficios">Beneficios</a>
+                <a class="small" href="#testimonios">Testimonios</a>
+                <a class="btn" href="https://wa.me/573180376297?text=Hola!%20Me%20interesan%20los%20Kits%20de%20Finanzas.">Comprar</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div>
+                    <h1>Organiza tus finanzas y alcanza tus metas — kits listos para usar</h1>
+                    <p>Plantillas de ahorro, finanzas para emprendedores, planeador 2025-2026 y agenda planificadora. Descarga, personaliza y empieza a ver resultados.</p>
+                    <div class="hero-cta">
+                        <button class="btn" onclick="document.getElementById('kits').scrollIntoView({behavior:'smooth'})">Ver kits y precios</button>
+                    </div>
+
+                    <div style="margin-top:18px;color:#475569;font-size:14px">Más vendido: <strong>Kit Grande — Todo en uno</strong> por solo <strong>$18.000 COP</strong></div>
+                </div>
+
+                <aside class="mockup">
+                    <div class="card"><strong>Plantilla de Ahorro</strong>
+                        <div style="font-size:13px;color:#64748b;margin-top:6px">Metas de ahorro, cálculo de fondo de emergencia, Calculadora I.C.</div>
+                    </div>
+                    <div class="card"><strong>Plantilla Finanzas Emprendedor</strong>
+                        <div style="font-size:13px;color:#64748b;margin-top:6px">Control de Cuentas por Cobrar y Pagar,  Control de Inventario, Checklist de Salud Financiera.</div>
+                    </div>
+                    <div class="card"><strong>Planeador 2025-2026 + Agenda</strong>
+                        <div style="font-size:13px;color:#64748b;margin-top:6px">Calendario, metas anuales y seguimiento semanal.</div>
+                    </div>
+                </aside>
+            </section>
+            
+            <hr>
+
+            <section id="galeria">
+                <h2 style="margin-bottom:8px">Visualiza tus Finanzas</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-2025-08-09-195007.png" alt="Plantilla de Ahorro">
+                        <h4>Plantilla de Ahorro</h4>
+                        <p>Con opciones de ahorro, Calculadora I.C; Fondo de Emergencia.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-2025-08-09-163528.png" alt="Agenda Planificador Anual">
+                        <h4>Agenda Planificadora</h4>
+                        <p>organizar y visualizar tus tareas, citas, y metas en un solo lugar.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://happyteoboxcom.wordpress.com/wp-content/uploads/2025/08/captura-de-pantalla-2025-08-09-164738.png" alt="Planeador 2025-2026">
+                        <h4>Planeador 2025-2026</h4>
+                        <p>Calendario Anual en diferentes formatos, Lista To do y Notas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="beneficios">
+                <h2 style="margin-bottom:8px">¿Por qué funciona?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h4>Fácil de usar</h4>
+                        <p>Plantillas listas para editar en Excel/Google Sheets y agendas en PDF imprimible.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Diseño práctico</h4>
+                        <p>Enfoque en lo importante: ahorrar, planear y controlar gastos.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Hecho para emprendedores</h4>
+                        <p>Incluye herramientas para ventas, costos y flujo de caja.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="kits">
+                <h2 style="margin-bottom:8px">Kits y precios</h2>
+                <div class="pricing">
+                    <div class="card-pricing">
+                        <h3>Kit Pequeño</h3>
+                        <div class="price">$12.000 COP</div>
+                        <p class="small">Incluye 2 productos a elegir</p>
+                        <ul class="list">
+                            <li>Plantilla de Ahorro</li>
+                            <li>Plantilla de Finanzas para Emprendedores</li>
+                            <li>Agenda Planificadora o Planeador 2025-2026 (elige 2)</li>
+                        </ul>
+                        <a class="btn" href="https://wa.me/573180376297?text=Hola!%20Estoy%20interesado%20en%20comprar%20el%20Kit%20Pequeño.%20Me%20podrías%20dar%20más%20información%20para%20la%20compra?">Comprar Kit Pequeño</a>
+                    </div>
+
+                    <div class="card-pricing" style="border:2px solid #06b6d4">
+                        <h3>Kit Mediano</h3>
+                        <div class="price">$15.000 COP</div>
+                        <p class="small">Incluye 3 productos a elegir</p>
+                        <ul class="list">
+                            <li>Plantilla de Ahorro</li>
+                            <li>Plantilla de Finanzas</li>
+                            <li>Planeador 2025-2026</li>
+                            <li>Agenda Planificadora</li>
+                        </ul>
+                        <a class="btn" href="https://wa.me/573180376297?text=Hola!%20Estoy%20interesado%20en%20comprar%20el%20Kit%20Mediano.%20Me%20podrías%20dar%20más%20información%20para%20la%20compra?">Comprar Kit Mediano</a>
+                    </div>
+
+                    <div class="card-pricing">
+                        <h3>Kit Grande</h3>
+                        <div class="price">$18.000 COP</div>
+                        <p class="small">Pack completo — 4 productos</p>
+                        <ul class="list">
+                            <li>Plantilla de Ahorro</li>
+                            <li>Plantilla de Finanzas para Emprendedores</li>
+                            <li>Planeador 2025-2026</li>
+                            <li>Agenda Planificadora</li>
+                        </ul>
+                        <a class="btn" href="https://wa.me/573180376297?text=Hola!%20Estoy%20interesado%20en%20comprar%20el%20Kit%20Grande.%20Me%20podrías%20dar%20más%20información%20para%20la%20compra?">Comprar Kit Grande</a>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="testimonios">
+                <h2 style="margin-bottom:8px">Testimonios</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <strong>Laura M.</strong>
+                        <p style="margin:8px 0">"Con el kit grande logré organizar mis gastos y abrir un fondo de emergencia en solo 2 meses. Súper recomendado."</p>
+                        <div class="small">Emprendedora — Bogotá</div>
+                    </div>
+                    <div class="testimonial">
+                        <strong>Carlos R.</strong>
+                        <p style="margin:8px 0">"La plantilla de finanzas me permitió entender mis márgenes y dejar de perder dinero en costos invisibles."</p>
+                        <div class="small">Freelancer — Medellín</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section style="margin-top:18px">
+                <h3>Oferta especial</h3>
+                <p>Compra hoy el KIT MEDIANO y obtén un <strong>mini eBook: "5 Claves para Organizar tus Finanzas"</strong>. Una guía de 5-10 páginas en PDF con consejos prácticos para tus finanzas personales y de negocio. ¡Un regalo para ayudarte a empezar!</p>
+                <div style="margin-top:10px"><button class="btn" onclick="document.getElementById('kits').scrollIntoView({behavior:'smooth'})">Comprar ahora</button></div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div>© <strong>Kit Finanzas</strong> — Plantillas digitales</div>
+                <div style="color:#94a3b8">Preguntas? <a href="plantillasalrescate@gmail.com">plantillasalrescate@gmail.com</a></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
